@@ -1,26 +1,31 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id ="app">
+ <product_list_one ></product_list_one>
+ <product_list_two ></product_list_two>
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Productlistone from './components/Productlistone.vue'
+
+import Productlissttwo from './components/Productlisttwo.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
-  }
+    "product_list_one":Productlistone,
+    "product_list_two":Productlissttwo,
+  },
+  
 }
 </script>
 
+
+
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+body{
+    font-family: Ubuntu;
+    color: #555;
 }
 </style>
+
